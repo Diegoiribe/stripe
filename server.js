@@ -6,7 +6,7 @@ const express = require('express')
 const app = express()
 app.use(express.static('public'))
 
-const YOUR_DOMAIN = 'http://127.0.0.1:5500/public/'
+const YOUR_DOMAIN = 'https://diegoiribe.github.io/stripe/'
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
